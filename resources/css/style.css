@@ -76,3 +76,244 @@ header {
   font-weight: bold;
   color: white;
 }
+
+#nav_box {
+  width: 100%;
+  height: auto;
+  background-color: firebrick;
+}
+
+#nav_box nav {
+  display: flex;
+  width: 960px;
+  height: auto;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.desktop {
+  display: flex;
+  padding: 0.75rem 0;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+}
+
+#alt_nav {
+  display: none;
+}
+
+#main_box {
+  display: flex;
+  flex-direction: column;
+  width: 960px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.product_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 960px;
+  height: 15rem;
+  margin: 3rem auto;
+}
+
+.prod {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  border: 4px solid black;
+}
+
+.caption {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.caption h5 {
+  color: white;
+  padding: 0.5rem 0;
+  width: 100%;
+  height: auto;
+  font-size: 1rem;
+  text-align: center;
+  background-color: black;
+}
+
+.image_box {
+  display: flex;
+  height: 13rem;
+  width: 100%;
+}
+
+#pen img {
+  height: auto;
+  width: 9rem;
+  margin: auto;
+}
+
+#watch img {
+  height: auto;
+  width: 9rem;
+  margin: auto;
+}
+
+#glasses img {
+  height: auto;
+  width: 9rem;
+  margin: auto;
+}
+
+.loc_hour {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 960px;
+  height: auto;
+}
+
+.location_box {
+  width: 35%;
+  height: auto;
+  padding: 1rem 0;
+}
+
+.location_box h2 {
+  background-color: black;
+  font-size: 1rem;
+  color: white;
+  padding: 1rem 0 1rem 3rem;
+}
+
+.location_box h6 {
+  margin-bottom: 4rem;
+}
+
+.hour_box {
+  width: 35%;
+  height: auto;
+  padding: 1rem 0;
+}
+
+.hour_box h2 {
+  background-color: black;
+  font-size: 1rem;
+  color: white;
+  padding: 1rem 0 1rem 3rem;
+}
+
+.hour_box h6 {
+  margin-bottom: 4rem;
+}
+
+footer {
+  width: 100%;
+  height: 5rem;
+  background-color: black;
+}
+
+.c_right {
+  width: 960px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.c_right h5 {
+  color: white;
+  font-size: 1rem;
+  padding: 2rem 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .prod:last-child, .desktop {
+    display: none;
+  }
+
+  .prod {
+    width: 47%;
+  }
+
+  #header_box, .arrival_content, #nav_box nav, #main_box, .product_box, .loc_hour, .c_right {
+    width: 100%;
+  }
+
+  #alt_nav {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    padding: 0.75rem 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .prod:nth-last-child(2n) {
+    display: none;
+  }
+
+  #arrival_box {
+    height: 15rem;
+  }
+
+  .arrival_text {
+    width: 100%;
+    height: auto;
+    top: 10rem;
+  }
+
+  .arrival_text h2 {
+    padding-top: 1rem;
+    font-size: 0.77rem;
+    font-weight: bold;
+    margin-left: 2rem;
+  }
+
+  .arrival_text h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .product_box {
+    justify-content: center;
+  }
+
+  .prod {
+    width: 90%;
+  }
+
+  .loc_hour {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .location_box, .hour_box {
+    width: 90%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .location_box h6 {
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+  }
+
+  .location_box h2, .hour_box h2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+  }
+
+  .c_right {
+    text-align: center;
+  }
+}
